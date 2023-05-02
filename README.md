@@ -10,3 +10,4 @@ Creare un componente che mostri il numero totale di risultati ottenuti.<br>
 ## Steps
 
 - Installare axios, sass, bootstrap e font;
+- Creazione Header con logo;
