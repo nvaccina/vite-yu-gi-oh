@@ -22,9 +22,7 @@ export default {
       .then(result => {
         store.cardsList = result.data.data
         //console.log(result.data)
-        console.log(result.data.data);
-        //console.log(result.data.data[0].card_images[0].image_url);
-        //console.log(this.store.cardsList[0])
+        //console.log(result.data.data);
       })
     }
   },

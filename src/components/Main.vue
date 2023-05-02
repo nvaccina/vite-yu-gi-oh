@@ -25,15 +25,24 @@ export default {
 
     <div class="nv_main-container text-bg-light py-5">
 
-      <div class="container d-flex flex-wrap">
+      <div class="container">
+        
+        <div class="cardsFounded">
+          <p>Found {{store.cardsList.length}} cards</p>
+        </div>
+        
+        <div class="container-wrapper d-flex flex-wrap">
+          <Card 
+            v-for="card in store.cardsList"
+            :key="card.id"
+            :name="card.name"
+            :image="card.card_images[0].image_url"
+            :archetype="card.archetype || card.attribute"
+          />
 
-        <Card 
-          v-for="card in store.cardsList"
-          :key="card.id"
-          :name="card.name"
-          :image="card.card_images[0].image_url"
-          :archetype="card.archetype || card.attribute"
-        />
+        </div>
+
+        
 
 
       </div>
@@ -49,6 +58,15 @@ export default {
 
   main{
     background-color: $primary-color;
+    .cardsFounded{
+      background-color: #212529;
+      color: $secondary-color;
+      margin: 0 10px;
+      p{
+        padding: 10px;
+        font-weight: 700;
+      }
+    }
     .nv_main-container{
       width: 80%;
       margin: 0 auto;
