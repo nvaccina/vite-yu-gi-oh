@@ -1,0 +1,8 @@
+@use './general/variables' as *;
+
+@import 'bootstrap/scss/bootstrap';
+@import '@fontsource/montserrat/index.css';
+
+body{
+  font-family: $primary-font;
+}
