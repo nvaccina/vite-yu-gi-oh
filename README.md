@@ -11,3 +11,7 @@ Creare un componente che mostri il numero totale di risultati ottenuti.<br>
 
 - Installare axios, sass, bootstrap e font;
 - Creazione Header con logo;
+- Creazione Main con contenitore card;
+- Creazione componente card;
+- Aggiunto lo store con l'Api e ciclata la card prendendo i dati dallo store;
+- 
