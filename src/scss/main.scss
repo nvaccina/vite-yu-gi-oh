@@ -5,6 +5,8 @@
 
 body{
   font-family: $primary-font;
+  min-height: 100vh;
+  background-color: $primary-color;
 }
 img{
   width: 100%;
