@@ -7,6 +7,8 @@ export const store = reactive ({
   listCardType: [],
   typeToSearch: null,
   isLoading: true,
+  cardOffset: 0,
+  cardNumber: 20,
 })
 
 /**/

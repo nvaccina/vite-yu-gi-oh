@@ -4,6 +4,7 @@ import {store} from './data/store'
 
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
+import Footer from './components/Footer.vue'
 import Searchbar from './components/partials/Searchbar.vue'
 import Loader from './components/partials/Loader.vue'
 
@@ -12,6 +13,7 @@ export default {
   components:{
     Header,
     Main,
+    Footer,
     Searchbar,
     Loader
   },
@@ -27,6 +29,8 @@ export default {
       axios.get(store.apiUrl, {
         params:{
           type: store.typeToSearch,
+          num: store.cardNumber,
+          offset: store.cardOffset
         }
       })
 
@@ -58,12 +62,18 @@ export default {
 
 
 
-    <Searchbar @startSearch="getApi"/>
+  <Searchbar @startSearch="getApi"/>
 
-    <Loader v-if="store.isLoading"/>
+  <Loader v-if="store.isLoading"/>
     
+  <div v-else>
 
-    <Main v-else/>
+    <Main/>
+
+    <Footer @startSearch="getApi"/>
+
+  </div>
+    
   
   
 </template>

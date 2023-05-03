@@ -17,3 +17,4 @@ Creare un componente che mostri il numero totale di risultati ottenuti.<br>
 - Aggiunto elemento che mostra numero totale dei risultati ottenuti;
 - Aggiuto componente ricerca card per type;
 - Creato componente loader;
+- Aggiunti bottoni prev e next per cambiare pagina;
