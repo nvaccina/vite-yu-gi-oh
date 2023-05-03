@@ -14,4 +14,5 @@ Creare un componente che mostri il numero totale di risultati ottenuti.<br>
 - Creazione Main con contenitore card;
 - Creazione componente card;
 - Aggiunto lo store con l'Api e ciclata la card prendendo i dati dallo store;
-- 
+- Aggiunto elemento che mostra numero totale dei risultati ottenuti;
+- Aggiuto componente ricerca card per type;

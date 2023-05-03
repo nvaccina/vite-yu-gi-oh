@@ -19,10 +19,7 @@ export default {
 <template>
 
   <main>
-    <div class="nv_main-container">
-      <h2>Ricerca Card</h2>
-    </div>
-
+    
     <div class="nv_main-container text-bg-light py-5">
 
       <div class="container">
@@ -37,7 +34,7 @@ export default {
             :key="card.id"
             :name="card.name"
             :image="card.card_images[0].image_url"
-            :archetype="card.archetype || card.attribute"
+            :archetype="card.type"
           />
 
         </div>
@@ -56,8 +53,6 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/general/variables' as *;
 
-  main{
-    background-color: $primary-color;
     .cardsFounded{
       background-color: #212529;
       color: $secondary-color;
@@ -71,6 +66,5 @@ export default {
       width: 80%;
       margin: 0 auto;
     }
-  }
 
 </style>

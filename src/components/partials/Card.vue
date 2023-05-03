@@ -17,9 +17,11 @@ export default {
     
     <img :src="image" alt="">
 
-    <h4>{{name}}</h4>
-    <p>{{archetype}}</p>
-
+    <div class="card-body py-1">
+      <h4 class="card-title">{{name}}</h4>
+      <p class="card-text pt-1">{{archetype}}</p>
+    </div>
+    
   </div>
   
 </template>
@@ -30,13 +32,15 @@ export default {
   .nv_card{
     background-color: $primary-color;
     width: calc(100% / 5 - 20px);
-    min-height: 200px;
     border: 1px solid black;
     margin: 0 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.1)
+    }
     h4{
       color: $secondary-color;
-      padding: 20px 0;
     }
   }
 
